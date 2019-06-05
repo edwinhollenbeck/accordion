@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component opens a clicked section 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      key="0"
+      onClick={[Function]}
+      type="button"
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      key="1"
+      onClick={[Function]}
+      type="button"
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      key="2"
+      onClick={[Function]}
+      type="button"
+    >
+      Section 3
+    </button>
+  </li>
+  <p>
+    Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+  </p>
+</ul>
+`;
+
+exports[`renders without props 1`] = `
+<ul>
+  <p />
+</ul>
+`;

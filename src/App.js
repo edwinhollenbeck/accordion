@@ -11,7 +11,6 @@ class App extends React.Component {
 
   handleButtonClick(i) {
     this.setState({currentButtonIndex: i});
-    this.renderContent();
   }
 
   renderButtons() {
@@ -28,7 +27,7 @@ class App extends React.Component {
   renderContent() {
     const currentButton = this.props.sections[this.state.currentButtonIndex]
     return (
-      <p>{this.props.sections.length && currentButton.content}</p>
+      <p>{!!this.props.sections.length && currentButton.content}</p>
     )
   }
 
@@ -36,6 +35,7 @@ class App extends React.Component {
     return (
       <ul>
         {this.renderButtons()}
+        {this.renderContent()}
       </ul>
     );
   }
